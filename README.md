@@ -4,7 +4,7 @@
 2. Run `npm install` to install dependencies
 3. Run `npm start` to initialize and connect to a node server with your default browser
 
-## What you like about my implementation?
+## What you like about your implementation?
 - I liked the way I defined to generate the width of each timebar, using the setDayWith state I can also set this width according to the specified zoom, which made the implementation much easier.
 
 ## What you would change if you were going to do it again?
