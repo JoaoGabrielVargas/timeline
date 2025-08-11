@@ -35,7 +35,8 @@ export default function Timeline() {
           border: "1px solid #ccc",
           overflowX: "auto",
           whiteSpace: "nowrap",
-          height: lanes.length * laneHeight + 40
+          height: lanes.length * laneHeight + 40,
+          width: "100%"
         }}
       >
 
@@ -47,7 +48,7 @@ export default function Timeline() {
               key={i}
               style={{
                 position: "absolute",
-                left: i * 20,
+                left: i * dayWidth,
                 top: 0,
                 bottom: 0,
                 width: dayWidth,
@@ -68,7 +69,7 @@ export default function Timeline() {
                 laneHeight={laneHeight}
                 width={width}
                 minItemWidth={minItemWidth}
-                left={dateToX(item.start, minDate)}
+                left={dateToX(item.start, minDate, dayWidth)}
               />
             )
           }

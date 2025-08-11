@@ -4,7 +4,7 @@ const Timebar = ({item, laneIndex, laneHeight, left, width, minItemWidth}) => {
     <div
       style={{
         position: "absolute",
-        top: 150 + laneIndex * laneHeight,
+        top: 15 + laneIndex * laneHeight,
         left: left,
         width: Math.max(width, minItemWidth),
         height: laneHeight - 10,

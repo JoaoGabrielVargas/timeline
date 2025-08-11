@@ -6,4 +6,4 @@ export const calculateWidthPerDays = (dateEnd, dateStart, dayWidth) => {
   return width;
 }
 
-export const dateToX = (date, minDate) => ((new Date(date) - minDate) / (1000 * 60 * 60 * 24)) * 20;
+export const dateToX = (date, minDate, dayWidth) => ((new Date(date) - minDate) / (1000 * 60 * 60 * 24)) * dayWidth;
