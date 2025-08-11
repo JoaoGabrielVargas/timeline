@@ -10,8 +10,6 @@ export default function Timeline() {
   const lanes = assignLanes(timelineItems);
   const [dayWidth, setDayWidth] = useState(20);
 
-  console.log("lanes", lanes)
-
   const allDates = timelineItems.flatMap(item => [item.start, item.end]);
   const minDate = new Date(Math.min(...allDates.map(d => new Date(d))));
   const maxDate = new Date(Math.max(...allDates.map(d => new Date(d))));
@@ -36,7 +34,7 @@ export default function Timeline() {
           overflowX: "auto",
           whiteSpace: "nowrap",
           height: lanes.length * laneHeight + 40,
-          width: "100%"
+          width: "100%",
         }}
       >
 
